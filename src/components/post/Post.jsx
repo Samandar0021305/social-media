@@ -3,7 +3,12 @@ import {MoreVert,ThumbUp,Favorite} from "@mui/icons-material";
 
 import myLogo from "../../assets/pexels-photo-220453.webp"
 import logo from "../../assets/post.webp";
-export default function Post({post}) {
+import { useState } from "react";
+export default function Post() {
+    const [x,setX] = useState(23)
+ const handl = ()=>{
+     setX(x+1)
+ }
   return (
     <div className="post">
         <div className="postWrapper">
@@ -24,9 +29,9 @@ export default function Post({post}) {
             </div>
             <div className="postBottom">
                 <div className="postBottomLeft">
-                    <ThumbUp className="likeIcon"  htmlColor="blue" />
-                    <Favorite className="likeIcon" htmlColor="red" />
-                    <span className="postLikeCounter">32 people like it </span>
+                    <ThumbUp className="likeIcon" onClick={handl}  htmlColor="blue" />
+                    <Favorite className="likeIcon" onClick={handl} htmlColor="red" />
+                    <span className="postLikeCounter">{x} people like it </span>
                 </div>
                 <div className="postBottomRigth">
                     <span className="postCommentText">9 comment</span>
