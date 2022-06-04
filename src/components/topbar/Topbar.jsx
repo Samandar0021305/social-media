@@ -1,18 +1,19 @@
-import  './topbar.css';
+import PersonLogo from "../../assets/pexels-photo-220453.webp";
 
 import {Search,Person,Chat , Notifications} from "@mui/icons-material";
 
+import  './topbar.css';
 
 
 export default function Topbar() {
   return (
     <div className='topbarContainer'>
         <div className="topbarLeft">
-            <span className="logo">SamandarLocial</span>
+            <span className="logo">SamandarSocial</span>
         </div>
         <div className="topbarCenter">
             <div className="searchbar">
-            <Search />
+            <Search className="searchIcon" />
             <input type="text" placeholder='search for frends' className="searchInput"   />
             </div>
         </div>
@@ -45,7 +46,7 @@ export default function Topbar() {
                     </span>
                 </div>
             </div>
-            <img src="" alt="" className="topbarImg" />
+            <img src={PersonLogo} alt="" className="topbarImg" />
         </div>
 
     </div>
