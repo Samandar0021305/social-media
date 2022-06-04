@@ -1,8 +1,9 @@
+import Topbar from "../../components/topbar/Topbar";
 
 function Home(){
     return(
         <>
-        this is home pages
+        <Topbar />
         </>
     )
 }
