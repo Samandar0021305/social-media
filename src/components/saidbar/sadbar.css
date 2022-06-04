@@ -1,6 +1,7 @@
 .saidbar{
     flex: 3;
-    min-height: calc(100vh - 50px);
+    
+    height: calc(100vh - 50px);
     overflow-y: scroll ;
 }
 
