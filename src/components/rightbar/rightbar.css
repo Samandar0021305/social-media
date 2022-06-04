@@ -1,3 +1,63 @@
 .rightbar{
     flex: 3.5;
 }
+.rightbarWrapper{
+    padding: 20px 20px 0 0;
+
+}
+.brithdayImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.brithdayText{
+    font-weight: 300;
+    font-size: 15px;
+}
+.brithdayContainer{
+    display: flex;
+    align-items: center;
+}
+.rightbarAd{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.rightbarFrendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.rightbarFrend{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.rightbarImgContainer{
+    margin-right: 10px;
+    position:  relative;
+}
+.rightbarProfilaImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rightbarOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: -2;
+    right: 0;
+    border: 2px soldi white;
+}
+.rigthbarUserName{
+    font-weight: 500;
+
+}
+.rightbarTitle{
+    margin-bottom: 20px;
+}
