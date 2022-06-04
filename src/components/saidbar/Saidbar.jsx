@@ -1,5 +1,5 @@
 import "./sadbar.css";
-
+import data from "../../asaidData";
 import {RssFeed,Chat,Group,QuestionAnswer,VideoCall,Bookmark,Work,Event,Chalet} from "@mui/icons-material";
 
 import FrendLogo from "../../assets/portrait-normal-boy-smiling-over-260nw-135283244.webp";
@@ -49,46 +49,17 @@ function Saidbar(){
             <button className="saidbarButton">Show More</button>
             <hr className="saidbarHr" />
             <ul className="saidbarFrendList">
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
-                <li className="saidbarFrend">
-                    <img className="saidbarFrendImg" src={FrendLogo} alt="" />
-                    <span className="saidbarFrendName">Jan Doe</span>
-                </li>
+                {
+                    data.map((res)=>{
+                        return(
+                            <li className="saidbarFrend" key={res.id}>
+                                <img className="saidbarFrendImg" src={res.img} alt="" />
+                                <span className="saidbarFrendName">{res.name}</span>
+                            </li>
+                        )
+                    })
+                }
+                
             </ul>
         </div> 
         </div>
